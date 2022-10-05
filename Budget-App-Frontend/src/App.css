@@ -1,0 +1,128 @@
+.App {
+  min-height: 100vh;
+  text-align: center;
+  background: linear-gradient(#1cb5e0, #000046);
+}
+
+.centerItemsLayout {
+  margin-top: 2%;
+  margin-left: 30%;
+  width: 60%;
+}
+
+.tableItem {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20%;
+  padding-left: 30%;
+}
+
+.tableRow {
+  background-color: lightgreen;
+}
+.sideMenuContainer {
+  border-radius: 2%;
+  background-color: white;
+  margin-left: 2%;
+  margin-right: 25%;
+  width: 40vh;
+  position: fixed;
+  top: 15%;
+}
+
+.sideMenuHeader {
+  width: 100%;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin-left: 30%;
+  padding-right: 10%;
+  margin-top: 3%;
+}
+
+.transactionsButtons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 30%;
+  padding-right: 10%;
+  margin-top: 3%;
+}
+
+.sideMenuItem {
+  width: 23%;
+  height: 20%;
+}
+
+.sideMenuTitle {
+  font-size: 25%;
+}
+
+.filterInput {
+  width: 20%;
+}
+
+.LoginFormContainer {
+  background-color: white;
+  border-radius: 5%;
+  width: 70vh;
+  height: 50vh;
+  margin: auto;
+  margin-top: 18vh;
+}
+
+.SignUpContainer {
+  background-color: white;
+  border-radius: 5%;
+  width: 70vh;
+  margin: auto;
+  margin-top: 18vh;
+}
+
+.SigunUpFormItems {
+  margin-left: 26%;
+  padding-top: 3%;
+  width: 50%;
+  height: 100;
+}
+
+.transactionContainer {
+  background-color: white;
+  border-radius: 5%;
+  width: 70vh;
+  margin: auto;
+  margin-top: 2vh;
+}
+
+.FormItems {
+  margin-left: 26%;
+  padding-top: 8%;
+  width: 50%;
+  height: 100;
+}
+
+.buttonSubmit {
+  margin-bottom: 5%;
+}
+
+.select {
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+
+.userImage {
+  width: 30%;
+  height: 30%;
+}
+
+.label {
+  color: white;
+}
+
+.categoryForm {
+  width: 100%;
+  height: 5vh;
+  margin-bottom: 5%;
+}

@@ -1,0 +1,36 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "name": "Uber",
+      "category_id": 1,
+      "amount": "10.0",
+      "date": "2022-08-13",
+      "currency": "USD"
+    },
+    {
+      "id": 1,
+      "name": "Games",
+      "category_id": 1,
+      "amount": "30.0",
+      "date": "2022-08-13",
+      "currency": "USD"
+    },
+    {
+      "id": 2,
+      "name": "Sarita Restaurant",
+      "category_id": 2,
+      "amount": "58.0",
+      "date": "2022-07-10",
+      "currency": "GTQ"
+    },
+    {
+      "id": 3,
+      "name": "Madrid Airport",
+      "category_id": 2,
+      "amount": "300.0",
+      "date": "2021-10-03",
+      "currency": "EUR"
+    }
+  ]
+}
