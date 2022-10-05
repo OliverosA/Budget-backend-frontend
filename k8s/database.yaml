@@ -25,6 +25,10 @@ spec:
       labels:
         app: db-oracle
     spec:
+      securityContext:
+        runAsUser: 54321 # Oracle User
+        runAsGroup: 54321 # Oinstall group
+        fsGroup: 54321 # Oinstall group
       volumes:
         - name: db-init-volume
           configMap:
@@ -37,15 +41,21 @@ spec:
           image: gvenzl/oracle-xe
           env:
             - name: ORACLE_PASSWORD
-              value: "mipassword"
+              valueFrom:
+                secretKeyRef:
+                  name: db-creds
+                  key: sys-pass
             - name: APP_USER
               value: "appuser"
             - name: APP_USER_PASSWORD
-              value: "budgetoliverosapp"
+              valueFrom:
+                secretKeyRef:
+                  name: db-creds
+                  key: app-pass
           resources:
             limits:
               memory: "3000Mi"
-              cpu: "500m"
+              cpu: "150m"
           ports:
             - containerPort: 1521
           volumeMounts:
